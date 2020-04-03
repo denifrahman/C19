@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "189459668654",
+    "firebase_url": "https://jatim-covid-19.firebaseio.com",
+    "project_id": "jatim-covid-19",
+    "storage_bucket": "jatim-covid-19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189459668654:android:a0336ef3c416f15df1173f",
+        "android_client_info": {
+          "package_name": "com.idwebdesainer.c19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189459668654-ci7hfed4igamkrup9phbes16lrg61sk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idwebdesainer.c19",
+            "certificate_hash": "98279b59d05bfa2ffbf30657b89988e5da4e8c36"
+          }
+        },
+        {
+          "client_id": "189459668654-7hscsjjfd077li2fb2kubn62or9t6oom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7aYA4p-4p1ijcCUZl6uWuolYhiEepJSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189459668654-7hscsjjfd077li2fb2kubn62or9t6oom.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "189459668654-m1cnhr5gtl3i2230gcor6sou4nib2irh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.idwebdesainer.covid19"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189459668654:android:425c0046dc1e98faf1173f",
+        "android_client_info": {
+          "package_name": "com.idwebdesainer.covid_19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189459668654-ls0r5q3llq1sgorqpktrdglika1329p3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idwebdesainer.covid_19",
+            "certificate_hash": "41217416fd319214a23e8ea5b70dd669b34c4f7b"
+          }
+        },
+        {
+          "client_id": "189459668654-7hscsjjfd077li2fb2kubn62or9t6oom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7aYA4p-4p1ijcCUZl6uWuolYhiEepJSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189459668654-7hscsjjfd077li2fb2kubn62or9t6oom.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "189459668654-m1cnhr5gtl3i2230gcor6sou4nib2irh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.idwebdesainer.covid19"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-4655963065602426~1945712030"
+    }
+  ],
+  "configuration_version": "1"
+}
