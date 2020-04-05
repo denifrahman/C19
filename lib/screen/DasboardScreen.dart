@@ -42,7 +42,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
     nonPersonalizedAds: true,
   );
   InterstitialAd _interstitialAd;
-
   InterstitialAd createInterstitialAd() {
     return InterstitialAd(
       adUnitId: 'ca-app-pub-4655963065602426/6814895332',
@@ -55,7 +54,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   BannerAd _bannerAd;
   int _coins = 0;
-
   BannerAd createBannerAd() {
     return BannerAd(
       adUnitId: "ca-app-pub-4655963065602426/4875460845",
@@ -82,7 +80,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
   var labelData = [];
   DateTime dariDate = DateTime.now().add(Duration(days: -8));
   DateTime sampaiDate = DateTime.now();
-
   @override
   void initState() {
     super.initState();
@@ -91,12 +88,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
     versionCheck(context);
     _getData();
     _getDataPerKota();
-    _interstitialAd?.dispose();
-    _interstitialAd = createInterstitialAd()..load();
-    _bannerAd = createBannerAd()..load();
-    _bannerAd
-      ..load()
-      ..show();
     RewardedVideoAd.instance.load(
         adUnitId: "ca-app-pub-4655963065602426/2815246043",
         targetingInfo: targetingInfo);
@@ -557,6 +548,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ? BezierLine(
                     label: "ODP",
                     lineColor: Colors.blue,
+                dataPointFillColor: Colors.white,
                     lineStrokeWidth: 3,
                     data: dataODP.map((a) {
                       return DataPoint<DateTime>(
@@ -567,6 +559,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 : BezierLine(
                     label: "ODP",
                     lineColor: Colors.blue,
+                dataPointFillColor: Colors.white,
                     lineStrokeWidth: 3,
                     data: [
                         DataPoint<DateTime>(value: 0, xAxis: DateTime.now()),
@@ -575,6 +568,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ? BezierLine(
                     label: "PDP",
                     lineColor: Colors.orange,
+                dataPointFillColor: Colors.white,
                     lineStrokeWidth: 3,
                     data: dataPDP.map((d) {
                       return DataPoint<DateTime>(
@@ -584,6 +578,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 : BezierLine(
                     label: "PDP",
                     lineColor: Colors.orange,
+                dataPointFillColor: Colors.white,
                     lineStrokeWidth: 3,
                     data: [
                         DataPoint<DateTime>(value: 0, xAxis: DateTime.now()),
@@ -592,6 +587,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ? BezierLine(
                     label: "POSITIF",
                     lineColor: Colors.red,
+                dataPointFillColor: Colors.white,
                     lineStrokeWidth: 3,
                     data: dataPositif.map((q) {
                       return DataPoint<DateTime>(
@@ -601,6 +597,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 : BezierLine(
                     label: "POSITIF",
                     lineColor: Colors.red,
+                dataPointFillColor: Colors.white,
                     lineStrokeWidth: 3,
                     data: [
                         DataPoint<DateTime>(value: 0, xAxis: DateTime.now()),

@@ -418,9 +418,15 @@ class _BodyWidgetState extends State<BodyWidget> {
                                       Container(
                                         width: 5,
                                       ),
-                                      Text(
-                                        ' $status',
-                                        style: TextStyle(fontSize: 10),
+                                      RichText(
+                                        overflow: TextOverflow.clip,
+                                        maxLines: 1,
+                                        softWrap: false,
+                                        strutStyle: StrutStyle(fontSize: 12.0),
+                                        text: TextSpan(
+                                            style: TextStyle(
+                                              color: Colors.grey[800],),
+                                            text: '$status'),
                                       ),
                                     ],
                                   ),

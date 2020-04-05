@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:http/http.dart' as http;
 
-//const baseUrl = "http://idwebdesainer.com/demo/api_cinta_rakyat_app/";
-const baseUrl = "http://192.168.0.8:8888/covid19/api/";
+const baseUrl = "http://idwebdesainer.com/demo/api_cinta_rakyat_app/";
+//const baseUrl = "http://192.168.0.8:8888/covid19/api/";
 
 class Dashboard {
   static Future getGrafikPerBulan() {

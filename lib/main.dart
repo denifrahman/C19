@@ -73,33 +73,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-//class MaterialAppWithTheme extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    final theme = Provider.of<ThemeCanger>(context);
-//    return MaterialApp(
-//      debugShowCheckedModeBanner: false,
-//      theme:  theme.getTheme(),
-////      ThemeData(
-////        scaffoldBackgroundColor: Colors.white,
-////        fontFamily: 'OpenSans-Semibold',
-////        primaryColor: Colors.cyan[900],
-////        canvasColor: Colors.cyan[900],
-////      ),
-////      darkTheme: ThemeData(
-////        brightness: Brightness.dark,
-////        scaffoldBackgroundColor: Colors.black,
-////        fontFamily: 'OpenSans-Semibold',
-////      ),
-//      home: SplaceScreen(),
-//      initialRoute: '/',
-//      routes: {
-//        '/splace-screen': (context) => SplaceScreen(),
-//        '/portal': (context) => page_portal(),
-//        '/login': (context) => LoginPage(),
-//        '/dashboard': (context) => BottomMenu(),
-//      },
-//    );
-//  }
-//}

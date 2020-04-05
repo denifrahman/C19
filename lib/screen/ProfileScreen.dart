@@ -138,7 +138,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text('Lengkapi Profile'),
+        title: Text('Profile'),
         actions: <Widget>[
           IconButton(
             onPressed: () => _handleSignOut(context),
@@ -238,39 +238,39 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 SizedBox(
                   height: 15,
                 ),
-                Container(
-                  height: 60,
-                  width: MediaQuery.of(context).size.width - 10,
-                  child: DropdownButtonFormField<String>(
-                    items: ["SEHAT", "ODP", "PDP", "POSITIF"]
-                        .map((label) => DropdownMenuItem(
-                              child:
-                                  Text(label, style: TextStyle(fontSize: 12)),
-                              value: label,
-                            ))
-                        .toList(),
-                    isDense: true,
-                    hint: new Text(
-                      "Pilih Status Kesehatan",
-                      style: TextStyle(color: Colors.grey, fontSize: 12),
-                    ),
-                    value: statusKesehatan,
-                    validator: (String arg) {
-                      if (arg.length == null ? 0 : arg.length < 1)
-                        return 'Silahkan pilih status ';
-                      else
-                        return null;
-                    },
-                    onChanged: (val) {
-                      setState(() {
-                        statusKesehatan = val;
-                      });
-                    },
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
+//                Container(
+//                  height: 60,
+//                  width: MediaQuery.of(context).size.width - 10,
+//                  child: DropdownButtonFormField<String>(
+//                    items: ["SEHAT", "ODP", "PDP", "POSITIF"]
+//                        .map((label) => DropdownMenuItem(
+//                              child:
+//                                  Text(label, style: TextStyle(fontSize: 12)),
+//                              value: label,
+//                            ))
+//                        .toList(),
+//                    isDense: true,
+//                    hint: new Text(
+//                      "Pilih Status Kesehatan",
+//                      style: TextStyle(color: Colors.grey, fontSize: 12),
+//                    ),
+//                    value: statusKesehatan,
+//                    validator: (String arg) {
+//                      if (arg.length == null ? 0 : arg.length < 1)
+//                        return 'Silahkan pilih status ';
+//                      else
+//                        return null;
+//                    },
+//                    onChanged: (val) {
+//                      setState(() {
+//                        statusKesehatan = val;
+//                      });
+//                    },
+//                  ),
+//                ),
+//                SizedBox(
+//                  height: 10,
+//                ),
                 DateTimeField(
                   format: format,
                   controller: tanggalLahirController,
